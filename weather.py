@@ -1,6 +1,6 @@
 import requests
 
-api_key='130f9c1fcffb4ac7a6a65f33c07d6600'
+api_key='enter your api key from accuweather.com'
 city=input('Enter the city name :- ')
 
 weather_data = requests.get(
