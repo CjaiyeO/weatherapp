@@ -1,6 +1,6 @@
 # Weather Fetching Script
 
-This Python script fetches weather data using the OpenWeatherMap API.
+This Python script fetches weather data using the accuweather API.
 
 ## Usage
 
