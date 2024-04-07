@@ -9,9 +9,9 @@ weather_data = requests.get(
 if weather_data.json()['cod'] == '404':
     print("No City Found")
 else:
-    outlook = weather_data.json()['weather'][0]['main']
-    temp = (weather_data.json()['main']['temp'])
-    cel=round((temp-32)*5/9, 2)
+    outlook = weather_data.json()['weather'][0]['main'] #selecting the correct array which gives the outlook
+    temp = (weather_data.json()['main']['temp'])   #selecting the correct array for temprature
+    cel=round((temp-32)*5/9, 2)     #to convert Fahrenheit in Celsius 
 
     print(f"The weather in {city} : {outlook}")
     print(f"The temperature in {city} is {cel}ºC")
